@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- tailwinds linl add  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body>
+    <header>
+        <h1 class="text-3xl text-center my-6 
+    text-sky-400">MONEY MASTER</h1>
+    
+    </header>
+    <main>
+        <div class="grid lg:grid-cols-2 sm:grid-cols-2 gap-5	m-4">
+            <div class="bg-bg-gray-400	">
+                <img src="photo.webp" alt="">
+            </div>
+            <div class="bg-gray-200	">
+                <div class="text-center ">
+                    <h1 id="alert" class="text-red-600	"></h1>
+                <h1 class="text-xl font-semibold my-2">Income</h1>
+                <p class="my-2 ">income: <input id="income" type="text" class="px-3 input"></p>
+                <h1 class="text-xl font-semibold my-2">Expenses</h1>
+                <p class="my-2">Food: <input class="px-3 input" id="food-input" type="text"></p>
+                <p class="my-2">Rent: <input class="px-3 input" id="rent-input" type="text"></p>
+                <p class="my-2">Clothes: <input id="clothes-input" class="px-3 input" type="text"></p>
+                <button id="calculate-button" class="bg-sky-400 px-6 py-1 rounded my-2">Claculate</button>
+
+                <h1 class="text-xl font-semibold my-2">Total Expenses: <span id="expenses">00</span></h1>
+
+                <h1 class="text-xl font-semibold my-2">Balance: <span id="balance">00</span></h1>
+
+                
+                <!-- save  -->
+                <p >Save: <input id="save" class="px-3" type="text"> <span class="ml-2">%</span><button id="save-button" class="bg-sky-400 px-6 py-1 rounded my-2 ml-2">Save</button></p>
+                <!-- <h1 class="text-xl font-semibold my-2">Saving Amount: <samp id="saving-amount">00</samp></h1> -->
+
+                <h1 class="text-xl font-semibold my-2">Saving Amount: <span id="saving-amount">00</span></h1>
+
+                <h1 class="text-xl font-semibold my-2">Remainig Balance: <samp id="remaing -balance">00</samp>
+                </h1>
+
+                
+                </div>
+                
+                
+
+            </div>
+
+        </div>
+    </main>
+    <!-- js link  -->
+    <script src="money.js"></script>
+</body>
+</html>
